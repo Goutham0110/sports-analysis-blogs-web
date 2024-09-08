@@ -7,5 +7,4 @@ const configs = {
     CONTACT_LINKEDIN: process.env.REACT_APP_CONTACT_LINKEDIN,
     CONTACT_INSTAGRAM: process.env.REACT_APP_CONTACT_INSTAGRAM
 }
-console.log(process.env);
 export default configs;

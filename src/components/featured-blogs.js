@@ -60,7 +60,7 @@ export default function FeaturedBlogs() {
                                                 timeout={1000 * (index + 1)}
                                             >
                                                 <Grid item xs={12} key={index}>
-                                                    <BlogPreview id={blog.id} title={blog.title} desc={blog.desc} featured={true} />
+                                                    <BlogPreview id={blog.id} title={blog.title} description={blog.description} featured={true} />
                                                 </Grid>
                                             </Grow>
                                         )

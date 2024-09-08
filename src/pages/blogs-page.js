@@ -17,7 +17,6 @@ export default function Blogs() {
 
     const getBlogs = async (page = 1) => {
         try {
-            console.log("page in get", page)
             const blogListData = await blogServices.getBlogsList({ page: page });
             setBlogs(blogListData?.blogs);
             setTotalBlogs(blogListData?.count);
@@ -98,7 +97,7 @@ export default function Blogs() {
                             <Grid item xs={12} minWidth={450}>
                                 <Grid container justifyContent={"center"}>
                                     <Grid item>
-                                        <Pagination count={totalBlogs / 10} color="primary" size="large"
+                                        <Pagination count={Math.ceil(totalBlogs / 10)} color="primary" size="large"
                                             onChange={(e, page) => {
                                                 setPage(page);
                                             }} />
