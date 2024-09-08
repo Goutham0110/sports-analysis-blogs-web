@@ -1,9 +1,14 @@
-import { Box } from "@mui/material";
+import NavBar from "./components/nav-bar";
+import { Outlet } from "react-router-dom";
+import CustomSnackbar from "./components/snackbar";
 
 function App() {
   return (
-    <Box>
-    </Box>
+    <>
+      <NavBar />
+      <CustomSnackbar />
+      <Outlet />
+    </>
   );
 }
 
