@@ -14,6 +14,6 @@ https://sports-analysis-blogs-web.onrender.com/
 
 ## Technologies Used
 
-- **Frontend**: HTML, CSS, JavaScript (ReactJS)
+- **Frontend**: ReactJS
 - **Backend**: Node.js, Express.js
 - **Database**: MongoDB
